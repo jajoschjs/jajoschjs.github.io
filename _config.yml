@@ -1,3 +1,6 @@
 name: Jannis Schramm
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+# Maintenance mode: when true, the site shows a maintenance message and adds noindex/Disallow for crawlers.
+maintenance: true
+maintenance_message: "This site is temporarily under maintenance and may be unavailable. Please check back soon."
