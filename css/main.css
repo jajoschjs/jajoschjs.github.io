@@ -22,38 +22,54 @@ a:hover {
 
 /* Improved navbar styles */
 nav {
-    position: center;
+    position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #e6e6e6;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    background: rgba(13,17,23,0.95);
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.6);
     z-index: 1000;
-    color: red;
+    color: #c9d1d9;
 }
+
+/* Centered inner container for the nav content */
+nav .nav-inner,
 nav ul {
-    width: 70%;
+    max-width: 1100px;
     margin: 0 auto;
+    padding: 0 16px;
     display: flex;
     align-items: center;
-    height: 60px;
+    justify-content: space-between;
+    height: 64px;
     gap: 18px;
 }
+
 nav ul li {
     margin: 0;
 }
+
 nav a {
-    color: #333333;
+    color: #c9d1d9;
     padding: 8px 12px;
     border-radius: 6px;
     transition: background-color .12s ease, color .12s ease;
     font-weight: 600;
+    display: inline-block;
 }
-nav a:hover {
-    background: #f5f5f5;
-    color: #000000;
+
+nav a:hover,
+nav a:focus {
+    background: rgba(255,255,255,0.03);
+    color: #e6f3ff;
     text-decoration: none;
+    outline: none;
+}
+
+nav a.active {
+    color: #58a6ff;
 }
 
 /* Small screens: make nav items wrap and center */
